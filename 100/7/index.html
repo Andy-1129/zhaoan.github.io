@@ -14,6 +14,8 @@ content:""}
 	.right{background-color:red;width: 80%;float: right; }
 </style>
 <body>
+	<h4>如果一个父元素中包含若干个子元素，那么当给所有的子元素都设置了浮动（ e.g float: left ），那么父元素的高度就会为0。</h4>
+	<p>解决方法给父元素使用clearfix</p>
 	<div class="parent clearfix">
 		<div class="left"></div>
 		<div class="right">

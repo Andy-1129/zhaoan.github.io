@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>clearfix解决margin重合</title>
+</head>
+<style>
+		.clearfix:before
+		.clearfix:after{display:table;content:""}
+        .clearfix:after{clear:both;}
+        .clearfix{zoom:1;}
+	.parent{background-color: black;}
+	.banner{background-color: #526;width: 50%;height: 20px;margin-top: 50px;}
+	
+</style>
+<body>
+	<h4>如果一个父元素中包含若干个子元素，父子元素的 margin-top 是会重叠</h4>
+	<p>解决方法给父元素使用clearfix</p>
+	<div class="parent clearfix">
+		<div class="banner"></div>
+		<div class="main"></div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>
