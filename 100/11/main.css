@@ -10,7 +10,20 @@
 	height: 120px;
 	margin-bottom: 30px;
 }
+@media (min-width: 500px){
+	.first{
+		width: 50%;
+		float: left;
+	}
+}/* 竖列表变为横列表 
+数值最好用百分比形式*/
 .second{
 	background-color: red;
 	height: 120px;
 }
+@media (min-width: 500px){
+	.second{
+		width: 50%;
+		float: right;
+	}
+}/* 竖列表变为横列表*/
