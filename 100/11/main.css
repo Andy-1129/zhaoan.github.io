@@ -1,0 +1,16 @@
+.first, .second{
+	line-height: 120px;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+
+}
+.first{
+	background-color: #345;
+	height: 120px;
+	margin-bottom: 30px;
+}
+.second{
+	background-color: red;
+	height: 120px;
+}
