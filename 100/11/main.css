@@ -1,8 +1,5 @@
-.clearfix:before
-.clearfix:after{display:table;content:""}
-.clearfix:after{clear:both;}
-.clearfix{zoom:1;}
-*{margin: 0;}
+
+
 .first, .second, .third{
 	line-height: 120px;
 	text-align: center;
@@ -44,17 +41,14 @@
 
 }
 @media (min-width: 800px){
-	.first{
-		width: 33.33%;
-		float: left;
-	}
-	.second{
-		width: 33.33%;
-		float: left;
-	}
 	.third{
-		clear:none;/* 清除覆盖的clear属性*/
+		clear:none;
+		
+	}/* 清除覆盖的clear属性*/
+	.first, .second, .third{
 		width: 33.33%;
-		float:left;
-	}
+		float: left;
+	}/* 最好写在一块*/
+	
+	
 }/* 竖列表变为横列表*/
