@@ -1,4 +1,9 @@
-.first, .second{
+.clearfix:before
+.clearfix:after{display:table;content:""}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+*{margin: 0;}
+.first, .second, .third{
 	line-height: 120px;
 	text-align: center;
 	font-size: 30px;
@@ -10,20 +15,46 @@
 	height: 120px;
 	margin-bottom: 30px;
 }
+
+.second{
+	background-color: red;
+	height: 120px;
+	margin-bottom: 30px;
+}
 @media (min-width: 500px){
 	.first{
 		width: 50%;
 		float: left;
 	}
-}/* 竖列表变为横列表 
-数值最好用百分比形式*/
-.second{
-	background-color: red;
-	height: 120px;
-}
-@media (min-width: 500px){
 	.second{
 		width: 50%;
 		float: right;
+	}
+
+	.third{
+		
+		clear:both;
+	}/* 三个列表 清除float*/
+}/* 竖列表变为横列表 
+数值最好用百分比形式*/
+
+.third{
+	background-color: #965842;
+	height: 120px;
+
+}
+@media (min-width: 800px){
+	.first{
+		width: 33.33%;
+		float: left;
+	}
+	.second{
+		width: 33.33%;
+		float: left;
+	}
+	.third{
+		clear:none;/* 清除覆盖的clear属性*/
+		width: 33.33%;
+		float:left;
 	}
 }/* 竖列表变为横列表*/
