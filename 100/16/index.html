@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery类库 toggleClass 开关</title>
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js">
+    </script>
+    <style>
+     .box{
+     	height: 200px;
+     	width: 200px;
+     	border-radius: 50%;
+     	margin: 50px auto;
+     	background-color: #526485;
+     }
+     .box.change{
+     	background-color: red;
+     	border-radius: 10%;
+
+     }
+    </style>
+</head>
+<body>
+	<div class="box"></div>
+	<script>
+     $('.box').click(function(){
+     	$(this).toggleClass('change');
+     })
+	</script>
+</body>
+</html>
