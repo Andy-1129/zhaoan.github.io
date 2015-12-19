@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>toggleClass与transform</title>
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js">
+    </script>
+    <style>
+     .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        transition: all 1s .1s;
+          }/*.1s：延迟0.1秒*/
+    .box.move {
+    	transform:translateX(100px);
+          }/*向X轴正向移动100像素*/
+
+    </style>
+</head>
+<body>
+	<div class="box"></div>
+	<script>
+     $('.box').click(function(){
+     	$(this).toggleClass('move');
+     })
+	</script>
+</body>
+</html>

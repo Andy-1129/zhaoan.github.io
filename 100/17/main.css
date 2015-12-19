@@ -1,0 +1,15 @@
+ body {
+     	margin: 0;
+     }
+   	.box {
+	      position: fixed;
+		  left: 0;
+		  bottom: 0;
+	      width: 200px;
+	      transform: translateX(-200px);
+	      top: 0;
+	      background-color: #685421;
+		}
+	.box.show {
+      transform: translateX(0);
+	}
