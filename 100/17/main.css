@@ -1,7 +1,8 @@
+ *{margin: 0;padding: 0;}
  body {
      	margin: 0;
      }
-   	.box {
+.box {
 	      position: fixed;
 		  left: 0;
 		  bottom: 0;
@@ -9,7 +10,20 @@
 	      transform: translateX(-200px);
 	      top: 0;
 	      background-color: #685421;
-		}
+	      transition: transform 1s .1s;
+		}/*在position: fixed;下top: 0;bottom: 0;
+		使box上顶天下顶底*/
 	.box.show {
       transform: translateX(0);
 	}
+.icon-reorder {
+		
+		width: 50px;
+		height: 50px;
+		
+		
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		
+}
