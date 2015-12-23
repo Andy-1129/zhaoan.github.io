@@ -1,0 +1,20 @@
+.dark-primary-color    { background: #E64A19; }/*深主色*/
+.default-primary-color { background: #FF5722; }/*主色*/
+.light-primary-color   { background: #FFCCBC; }/*浅主色*/
+.text-primary-color    { color: #FFFFFF; }/*字体色*/
+.accent-color          { background: #FFEB3B; }/*强调色*/
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #B6B6B6; }/*分割线 色*/
+
+*{margin: 0;}
+
+
+header{height: 30px;}
+.hero{height: 30px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+margin: 0 auto;}
+
+
+
