@@ -18,46 +18,41 @@
 }
 
 .ball{
-  position: absolute;//绝对位置
+  position: absolute;/*绝对位置*/
   top: 0;
   left: 0;
   background-color: red;
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  transition: all 4s;//控制变换
-}
-.box{
-  margin: 0 auto;
-  height: 200px;
-  width: 200px;
-  background-color: #552233;
-}
+  transition: all 4s;
+}/*控制变换*/
+
 
 .ball2{
   position: absolute;
   top: 0;
-  left: 250px;
+  right: 0;
   background-color: #362541;
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  transition: all 4s;//变换控制
-}
-.bigbox:hover .ball{//过渡效果设置
-  background-color: #458614;
-top: 250px;
-  left: 25   0px;
-  border-radius:10px;
-  
-}
-.bigbox:hover .ball2{//过渡效果设置
+  transition: all 4s;
+}/*变换控制*/
+.bigbox:hover .ball{
   background-color: #458614;
 top: 250px;
   left: 0px;
   border-radius:10px;
   
-}
+}/*过渡效果设置*/
+.bigbox:hover .ball2{
+  background-color: #458614;
+top: 250px;
+  left: 0px;
+  border-radius:10px;
+  
+}/*过渡效果设置*/
 </style>
 </head>
 <body>
