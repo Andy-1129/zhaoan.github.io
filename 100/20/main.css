@@ -1,8 +1,10 @@
 .box{
 	width: 900px;
-	height: 50px;
+	height: 150px;
 	background-color: #325;
-	line-height: 50px;
+	line-height: 150px;
+	font-size: 16px;
 	text-align: center;
 	color: #fff;
+	margin: 50px auto;
 }
