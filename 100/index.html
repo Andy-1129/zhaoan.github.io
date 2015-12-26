@@ -4,14 +4,29 @@
   <meta charset="UTF-8">
   <title>100</title>
   <link rel="stylesheet" href="main.css">
-  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="19/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width，initial-scale=1">
+  <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-
-
-  <div class="hero clearfix">
+   
+   
+   <div class="hero clearfix">
     <h1>百日百页面</h1>
   </div>
+   <a class="hamburger">
+    <i class="icon-reorder"></i>
+   </a>
+   <div class="nav">
+     <ul>
+       <li>看到交付该会计师</li>
+       <li>烦得很</li>
+       <li>的发挥好地方</li>
+     </ul>
+   </div>
+   
+    <div class="ui-mask"></div>
+
 
 <ul class="toc">
 
@@ -288,7 +303,7 @@
    </a>
   </li>
 
-<li>
+  <li>
     <a class="clearfix" href="18">
       <div class="id">18</div>
       <div class="detail">
@@ -325,23 +340,13 @@
    </a>
   </li>
  
-   <li>
-    <a class="clearfix" href="21">
-      <div class="id">21</div>
-      <div class="detail">
-        <div class="title"></div>
-        <div class="date">
-          2015年12月19日
-        </div>
-      </div>
-   </a>
-  </li>
+   
   
   <li>
     <a class="clearfix" href="21">
       <div class="id">21</div>
       <div class="detail">
-        <div class="title">viewport</div>
+        <div class="title">viewport（样式在移动端也显示一样效果）</div>
         <div class="date">
           2015年12月25日
         </div>
@@ -349,6 +354,18 @@
    </a>
   </li>
 </ul>
+
+<script>
+    $('.hamburger').click(function(){
+      console.log("click................................");
+      $('.nav').addClass('show');
+      $('.ui-mask').addClass('show');
+    })
+    $('.ui-mask').click(function(){
+       $('.nav').removeClass('show');
+      $(this).removeClass('show');
+    })
+  </script>
 <footer></footer>
 </body>
 </html>

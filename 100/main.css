@@ -32,8 +32,71 @@ ul {
 
 
 /* section */
+a.hamburger{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: block;
+
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	
+	transition: background-color .5s;
+	cursor: pointer;/*鼠标变成小手*/
+	
 
 
+
+}
+a.hamburger:hover{
+	background-color: rgba(255, 255, 255, .3);
+}
+a.hamburger i{
+	
+	
+	font-size: 20px;
+	color: white;
+	line-height: 60px;
+
+}
+
+.nav{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 250px;
+	z-index: 4;/*比.ui-mask 中的高度大不被覆盖*/
+	transform: translateX(-250px);
+	background-color: pink;
+	transition: transform .5s;
+
+}/*两个div的位置放置顺序影响显示效果，
+若顺序相反则显示不出 icon-reorder*/
+.nav.show{
+	transform: translateX(0);
+}
+
+.nav ul li{
+	margin: 20px auto;
+}
+
+.ui-mask {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  display: none;/*使上面所写样式失效*/
+}
+
+.ui-mask.show {
+	display: block;
+}
 .hero {
 	background-color: rgb(0, 188, 212);
 }
