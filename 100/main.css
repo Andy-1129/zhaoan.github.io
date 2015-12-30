@@ -61,7 +61,7 @@ a.hamburger i{
 	line-height: 60px;
 
 }
-
+/* nav  */
 .nav{
 	position: fixed;
 	top: 0;
@@ -78,10 +78,24 @@ a.hamburger i{
 .nav.show{
 	transform: translateX(0);
 }
-
-.nav ul li{
-	margin: 20px auto;
+.nav ul{
+	margin-top: 50px;
 }
+.nav ul li a{
+	
+	font-size: 20px;
+	text-align: center;
+	display: block;
+	padding-top: 10px;
+	line-height: 40px;
+	transition: background-color .5s;
+
+}
+.nav ul li a:hover{
+	background-color: #253614;
+}
+
+
 
 .ui-mask {
   background-color: rgba(0,0,0,0.5);
